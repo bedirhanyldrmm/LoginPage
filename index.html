@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Formu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="">
+
+<h2>Giriş</h2>
+
+<input type="text"   name="eposta"  placeholder="E-posta" id="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"title="Lütfen geçerli bir e-posta adresi giriniz.">
+<input type="password"  name="sifre"  placeholder="Parola" id="myInput"> 
+<input type="checkbox" onclick="myFunction()">Parolayı Göster 
+
+<input type="submit"     value="Giriş Yap"  id="Girisyapbtn" formaction="anasayfa.html">
+<input type="submit"value="Şifremi unuttum"placeholder="Şifremi Unuttum" id="" formaction="sifremiunuttum.html">
+<input type="submit"value="Kayıt ol" placeholder="Kayıt Ol" id="" formaction="kayitol.html">
+
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script>
+
+</form>
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
